@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+
+  /* Delbo brand palette */
+  --color-paper: #f7f8fb;
+  --color-surface: #ffffff;
+  --color-ink: #0f172a;       /* Dark Slate */
+  --color-ink-muted: #5c6b84;
+  --color-line: #e3e7ef;
+
+  --color-primary: #4f46e5;        /* Primary Indigo */
+  --color-primary-strong: #4338ca;
+  --color-primary-tint: #eef0fd;
+
+  --color-success: #10b981;        /* Success Emerald */
+  --color-success-strong: #0e9a6c;
+  --color-success-tint: #e6f7f0;
+}
+
+body {
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
